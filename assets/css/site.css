@@ -1,0 +1,13 @@
+/* Language switching */
+[data-t] { display:none; }
+html[data-lang="en"] [data-t="en"],
+html[data-lang="fr"] [data-t="fr"],
+html[data-lang="ar"] [data-t="ar"],
+html[data-lang="zh"] [data-t="zh"] { display:block; }
+
+html[data-lang="ar"] { direction: rtl; }
+html[data-lang="ar"] .ltr { direction:ltr; }
+
+::selection { background: rgba(16,185,129,.22); }
+a { text-underline-offset: 3px; }
+button, a { -webkit-tap-highlight-color: transparent; }
